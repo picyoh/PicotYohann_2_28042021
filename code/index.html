@@ -3,23 +3,192 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
-        <title>RESERVIA</title>
+        <title>Reservia</title>
     </head>
     <body>
         <header>
-
+            <h1>Reservia</h1>
+            <a><img id="logo" alt="logo Reservia" src="images/logo/Reservia.svg"></a>
+            <nav>
+                <ul>
+                    <li><a href="hebergements.html">Herbergements</a></li>
+                    <li><a href="activités.html">Activités</a></li>
+                    <li><a href="signup.html">S'inscrire</a></li>
+                </ul>
+            </nav>
         </header>
-        
-        <section>
+        <main>
+            <article id="top">
+                <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+                <p>en plein centre ville ou en pleine nature</p>
+
+                <section id="search">
+                <div id="mapPoint"></div>
+                <label for="citySearch"></label>
+                <input type="search" id="citySearch" name="citySearch" aria-label="Recherche de la ville de votre séjour." pattern="">
+                <input type="submit" id="citySubmit" value="Marseille, France">
+                </section>
+
+                <section id="filters">
+                    <label for="filterBox">Filtres</label>
+                    <div id="eco">
+                        <input type="checkbox" id="economique" name="filterBox" aria-label="Economique">
+                        <span class="slider">Economique</span>
+                    </div>
+                    <div id="fam">
+                        <input type="checkbox" id="familial" name="filterBox" aria-label="Familial">
+                        <span class="slider">Familial</span>
+                    </div> 
+                    <div id="rom">
+                        <input type="checkbox" id="romantic" name="filterBox" aria-label="Romantique">
+                        <span class="slider">Romantique</span>
+                    </div>
+                    <div id="pet">
+                        <input type="checkbox" id="pets" name="filterBox" aria-label="Animaux autorisés">
+                        <span class="slider">Animaux autorisés</span>
+                    </div> 
+                    <div class="infos">
+                        <img class="infoPoint">
+                        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                    </div>    
+                </section>
+            </article>
+
+            <article id="hebergements">
+                <h3>Hébergements à Marseille</h3>
+                <section id="cityAccomodation">
+
+                    <div class="acco">
+                        <img class="accoImg">
+                        <h4></h4>
+                        <p></p>
+                        <i class="stars">
+                    </div>
+                    
+                    <div class="acco">
+                        <img class="accoImg">
+                        <h4></h4>
+                        <p></p>
+                        <i class="stars">
+                    </div>
+                    
+                    <div class="acco">
+                        <img class="accoImg">
+                        <h4></h4>
+                        <p></p>
+                        <i class="stars">
+                    </div>
+                    
+                    <div class="acco">
+                        <img class="accoImg">
+                        <h4></h4>
+                        <p></p>
+                        <i class="stars">
+                    </div>
+
+                    <div class="acco">
+                        <img class="accoImg">
+                        <h4></h4>
+                        <p></p>
+                        <i class="stars">
+                    </div>
+
+                    <div class="acco">
+                        <img class="accoImg">
+                        <h4></h4>
+                        <p></p>
+                        <i class="stars">
+                    </div>
+                    
+                    <a>Afficher plus</a>
+
+                </section>
                 
-        </section>
+                <aside id="populaires">
+                    <h3>Les plus populaires</h3>
+                    <i class="vecteur chelou"></i>
 
-        <aside>
+                    <div class="accoPop">
+                        <img class="accoPopImg">
+                        <h4></h4>
+                        <p></p>
+                        <i class="stars">
+                    </div>
 
-        </aside>
+                    <div class="accoPop">
+                        <img class="accoPopImg">
+                        <h4></h4>
+                        <p></p>
+                        <i class="stars">
+                    </div>
+
+                    <div class="accoPop">
+                        <img class="accoPopImg">
+                        <h4></h4>
+                        <p></p>
+                        <i class="stars">
+                    </div>
+
+                </aside>
+            </article>
+
+            <article id="Activités">
+                <h3>Activités à Marseille</h3>
+
+                <div class="activities">
+                    <img class="actImg">
+                    <h4></h4>
+                </div>
+
+                <div class="activities">
+                    <img class="actImg">
+                    <h4></h4>
+                </div>
+
+                <div class="activities">
+                    <img class="actImg">
+                    <h4></h4>
+                </div>
+
+                <div class="activities">
+                    <img class="actImg">
+                    <h4></h4>
+                </div>
+
+                <div class="activities">
+                    <img class="actImg">
+                    <h4></h4>
+                </div>
+
+                <div class="activities">
+                    <img class="actImg">
+                    <h4></h4>
+                </div>
+                
+            </article>
+
+        </main>
+        
 
         <footer>
-            
+           <h5>A propos</h5>
+           <ul>
+               <li><a href="">Centre d'aide</a></li>
+               <li><a href="">Centre d'aide</a></li>
+               <li><a href="">Centre d'aide</a></li>
+           </ul>
+           
+           <h5>Nos hébergements</h5>
+           <ul>
+            <li><a href="">Centre d'aide</a></li>
+            <li><a href="">Centre d'aide</a></li>
+           </ul>
+
+           <h5>Assistance</h5>
+           <ul>
+               <li><a href="">Centre d'aide</a></li>
+               <li><a href="">Centre d'aide</a></li>
+           </ul> 
         </footer>
 
     </body>
