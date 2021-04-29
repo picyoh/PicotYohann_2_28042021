@@ -1,0 +1,132 @@
+:root: {
+    --bleu: #0065FC;
+    --bleu-clair : #DEEBFF;
+    --gris: #F2F2F2;
+}
+
+body {
+
+}
+
+header {
+    display: flex;
+    flex-flow
+    justify-content: space-between;
+}
+
+h1 {
+
+}
+
+#logo {
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul{
+
+}
+
+li {
+    
+}
+
+main {
+
+}
+
+#top {
+
+}
+
+#search {
+
+}
+
+#mapPoint {
+
+}
+
+#citySearch {
+
+}
+
+#citySubmit {
+
+}
+
+#filters{
+
+}
+
+#filterBox {
+
+}
+
+.filterElements {
+
+}
+
+#eco {
+
+}
+
+#fam {
+
+}
+
+#rom {
+
+}
+
+#pet {
+
+}
+
+.infos {
+
+}
+
+#hebergements {
+
+}
+
+#cityAcco {
+
+}
+
+.stars {
+
+}
+
+#populaires {
+
+}
+
+#popLog {
+
+}
+
+#activités {
+
+}
+
+.imgVert{
+
+}
+
+.imgHor {
+
+}
+
+.imgAct {
+
+}
+
+footer {
+
+}
