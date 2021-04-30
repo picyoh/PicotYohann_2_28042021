@@ -1,0 +1,178 @@
+:root {
+    --bleu: #0065FC;
+    --bleu-clair : #DEEBFF;
+    --gris: #F2F2F2;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    padding: 0 2% 0 2%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+h1 {
+    visibility: hidden;
+    width: 0;
+    flex-grow: 0;
+}
+
+#logoContainer {
+    flex-grow: 2;
+
+}
+
+#logo {
+
+}
+
+nav {
+    flex-grow: 1;
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+li>a {
+    text-decoration: none;
+    color: black;
+}
+main {
+    padding: 0 2% 0 2%;
+}
+
+#top {
+
+}
+
+#search {
+
+}
+
+#mapPoint {
+
+}
+
+#citySearch {
+
+}
+
+#citySubmit {
+
+}
+
+#filterContainer{
+    display: flex;
+    /*! flex-basis: 60%; */
+}
+
+#filters {
+
+}
+
+.filterElements {
+    display: inline-block;
+    flex-basis: 20%;
+}
+
+.filterElements > input{
+    opacity: 0;
+}
+
+.slider {
+    cursor: pointer;
+    background-color: var(--gris);
+    transition: 300ms;
+}
+
+.slider:before {
+    content:"";
+    background-color: black;
+    transition: 300ms;
+}
+
+.infos {
+    display: flex;
+}
+
+.infoCircle {
+    border: 1px black solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infos p {
+
+}
+
+#hebergements {
+    background-color: var(--gris);
+    display: flex;
+}
+
+#cityAcco {
+    display: flex;
+    flex-grow: 2;
+}
+
+#populaires {
+    background-color: var(--gris);
+    display: flex;
+    flex-grow: 1;
+}
+
+#popLog {
+
+}
+
+.stars {
+
+}
+
+#activités {
+    display: flex;
+}
+
+.containerVert {
+    width: 100%
+}
+
+.imgVert{
+    width : 80%;
+    height: 50%;
+}
+
+.imgHor {
+
+}
+
+.imgAct {
+
+}
+
+footer {
+    padding: 0 2% 0 2%;
+    background-color: var(--gris);
+    display: flex;
+}
+
+footer ul {
+    flex-flow: column;
+    padding: 0;
+}
+
+.footerLists {
+    width: 25%;
+}
