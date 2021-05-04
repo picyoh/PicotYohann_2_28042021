@@ -12,6 +12,7 @@
 body {
     padding: 0;
     margin: 0;
+    font-family: 'Raleway', sans-serif;
 }
 
 header {
@@ -122,6 +123,8 @@ h4 {
 
 .infos {
     display: flex;
+    align-items: baseline;
+    justify-content: space-between;
 }
 
 .infoCircle {
@@ -130,6 +133,8 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 3vh;
+    width: 1vw;
 }
 
 .infos p {
@@ -222,14 +227,17 @@ h4 {
 /*Activités*/
 
 #activites {
-    flex-basis: 100%;
+    /*! flex-basis: 100%; */
+    /*! width: 30%; */
+    display: flex;
+    justify-content: space-between;
 }
 
 #actFlex {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-evenly;
-    height: 20%;
+    height: 30%;
 }
 
 .actContainer {
@@ -240,19 +248,33 @@ h4 {
     border-radius: var(--radius);
     display: flex;
     flex-flow: column;
+    flex-basis: 30%;
+    width: 15%;
+}
 
-    width: 20%;
+.actContainerFull {
+    background: white;
+    box-shadow: gainsboro 3px 3px;
+    padding: 0.5%;
+    margin: 1%;
+    border-radius: var(--radius);
+    display: flex;
+    flex-flow: column;
+    flex-basis: 100%;
+    width: 15%;
+
 }
 
 .imgAct {
-    width : 30vh;
-    height: 30vh;
+
     border-radius: var(--radius-img-vert);
+    height: 20vh;
 }
 
 .imgActFull {
-    width : 30vh;
+
     border-radius: var(--radius-img-vert);
+    height: 40vh;
 }
 
 /*Footer*/
