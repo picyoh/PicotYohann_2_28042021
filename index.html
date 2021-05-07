@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/4c1e0e2ac5.js" crossorigin="anonymous"></script>
         <title>Reservia</title>
     </head>
@@ -25,56 +25,66 @@
                 <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
                 <p>en plein centre ville ou en pleine nature</p>
 
-                <section id="search">
-                <div id="mapPoint"></div>
-                <label for="citySearch"></label>
-                <input type="search" id="citySearch" name="citySearch" value="Marseille, France" aria-label="Recherche de la ville de votre séjour." pattern="">
-                <input type="submit" id="citySubmit" value="Rechercher">
-                </section>
+                <span id="search">
+                  <span id="mapPoint">
+                    <i class="fa fa-map-marker"></i>
+                  </span>
+                    <label for="citySearch"></label>
+                    <input type="search" id="citySearch" name="citySearch" value="Marseille, France" aria-label="Recherche de la ville de votre séjour." pattern="">
+                    <input type="submit" id="citySubmit" value="Rechercher">
+                </span>
 
                 <section id="filterContainer">
-                    <label for="filters">Filtres</label>
-                    <div class="filterElements">
-                        <input type="checkbox" class="filterCheck" name="filters" aria-label="Economique">
+                    <label id="filtre" for="filterElements">Filtres</label>
+                    <span class="filterElements">
+                      <input type="checkbox" class="filterCheck" name="filters" aria-label="Economique">
                         <span class="slider">
-                            <i class="fas fa-money-bill-wave"></i>
-                            <p>Economique</p> 
+                          <span class="sliderDot">
+                            <i class="fas fa-money-bill-wave fa-lg"></i>
+                          </span>
+                            <p>Economique</p>
                         </span>
-                    </div>
-                    <div class="filterElements">
+                    </span>
+                    <span class="filterElements">
                         <input type="checkbox" class="filterCheck" name="filters" aria-label="Familial">
                         <span class="slider">
-                            <i class="fas fa-child"></i>
+                          <span class="sliderDot">
+                            <i class="fas fa-child fa-lg" style="padding:1.5vh;"></i>
+                          </span>
                             <p>Familial</p>
                         </span>
-                    </div> 
-                    <div class="filterElements">
+                    </span>
+                    <span class="filterElements">
                         <input type="checkbox" class="filterCheck" name="filters" aria-label="Romantique">
                         <span class="slider">
-                            <i class="fas fa-heart"></i>
+                          <span class="sliderDot">
+                            <i class="fas fa-heart fa-lg"></i>
+                          </span>
                             <p>Romantique</p>
                         </span>
-                    </div>
-                    <div class="filterElements">
+                    </span>
+                    <span class="filterElements">
                         <input type="checkbox" class="filterCheck" name="filters" aria-label="Animaux autorisés">
                         <span class="slider">
-                            <i class="fas fa-dog"></i>
+                          <span class="sliderDot">
+                            <i class="fas fa-dog fa-lg"></i>
+                          </span>
                             <p>Animaux autorisés</p>
                         </span>
-                    </div>   
+
+                    </div>
                 </section>
                 <div class="infos">
-                        <span class="infoCircle">  
+                        <span class="infoCircle">
                             <i class="fas fa-info"></i>
                         </span>
                         <p>Plus de 500 logements sont disponibles dans cette ville</p>
-                    </div> 
+                    </div>
             </article>
 
             <article id="hebergements">
                 <section id="cityAcco">
                     <h3>Hébergements à Marseille</h3>
-
                     <div class="vertContainer">
                         <!-- <img class="imgVert" srcset="images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg 1600w,
                                                      images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg 1024w,
@@ -95,12 +105,12 @@
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star grey"></i>
                             </span>
                         </div>
-                        
+
                     </div>
-                    
+
                     <div class="vertContainer">
                         <img class="imgVert" src="images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
                         <div class="infoContainer">
@@ -115,7 +125,7 @@
                             </span>
                         </div>
                     </div>
-                    
+
                     <div class="vertContainer">
                         <img class="imgVert" src="images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg">
                         <div class="infoContainer">
@@ -126,11 +136,11 @@
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star grey"></i>
                             </span>
                         </div>
                     </div>
-                    
+
                     <div class="vertContainer">
                         <img class="imgVert" src="images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
                         <div class="infoContainer">
@@ -140,8 +150,8 @@
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star grey"></i>
+                                <i class="fa fa-star grey"></i>
                             </span>
                         </div>
                     </div>
@@ -156,7 +166,7 @@
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star grey"></i>
                             </span>
                         </div>
 
@@ -176,15 +186,15 @@
                             </span>
                         </div>
                     </div>
-                    
+
                     <a class="lienPage" href="">Afficher plus</a>
 
                 </section>
-                
+
                 <section id="populaires">
                     <div id="popularTitle">
                         <h3>Les plus populaires</h3>
-                        <i class="fas fa-chart-line"></i>
+                        <i class="fas fa-chart-line fa-2x"></i>
                     </div>
                     <div class="horContainer">
                         <img class="imgHor" src="images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
@@ -212,7 +222,7 @@
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star grey"></i>
                             </span>
                         </div>
                     </div>
@@ -227,7 +237,7 @@
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star grey"></i>
                             </span>
                         </div>
                     </div>
@@ -236,70 +246,62 @@
             </article>
 
             <article id="activites">
-                <h3>Activités à Marseille</h3>
-                <!--
-                <div id="actFlex">
-                -->
-                    <div class="actContainerFull">
-                        <img class="imgActFull" src="images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
-                        <h4>Vieux Port</h4>
-                    </div>
-    
-                    <div class="actContainer">
-                        <img class="imgAct" src="images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
-                        <h4>Fort de Pomègues</h4>
-                    </div>
-    
-                    <div class="actContainer">
-                        <img class="imgAct" src="images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
-                        <h4>Îles du Frioul</h4>
-                    </div>
-    
-                    <div class="actContainerFull">
-                        <img class="imgActFull" src="images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
-                        <h4>Parc National des Calanques</h4>
-                    </div>
-    
-                    <div class="actContainer">
-                        <img class="imgAct" src="images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg">
-                        <h4>Notre-Dame-de-la-Garde</h4>
-                    </div>
-    
-                    <div class="actContainer">
-                        <img class="imgAct" src="images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg">
-                        <h4>Parc Lomgchamp</h4>
-                    </div>
-                    <!--
+              <h3>Activités à Marseille</h3>
+              <div id="activities">
+                <div class="actContainerFull">
+                  <img class="imgActFull" src="images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
+                  <h4>Vieux Port</h4>
                 </div>
-            -->
-                
+
+                <div class="actContainer">
+                  <img class="imgAct" src="images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
+                  <h4>Fort de Pomègues</h4>
+                </div>
+
+                <div class="actContainer">
+                  <img class="imgAct" src="images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
+                  <h4>Îles du Frioul</h4>
+                </div>
+
+                <div class="actContainerFull">
+                  <img class="imgActFull" src="images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
+                  <h4>Parc National des Calanques</h4>
+                </div>
+
+                <div class="actContainer">
+                  <img class="imgAct" src="images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg">
+                  <h4>Notre-Dame-de-la-Garde</h4>
+                </div>
+
+                <div class="actContainer">
+                  <img class="imgAct" src="images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg">
+                  <h4>Parc Lomgchamp</h4>
+                </div>
+              </div>
             </article>
-
         </main>
-        
-
         <footer>
             <div class="footerLists">
                 <h5>A propos</h5>
                 <ul>
-                    <li><a href="">Fonctionnement du site</a></li>
-                    <li><a href="">Condition générale de vente</a></li>
-                    <li><a href="">Données et confidentialité</a></li>
+                    <li><a class ="lienFoot" href="#">Fonctionnement du site</a></li>
+                    <li><a class ="lienFoot" href="#">Condition générale de vente</a></li>
+                    <li><a class ="lienFoot" href="#">Données et confidentialité</a></li>
                 </ul>
             </div>
             <div class="footerLists">
                 <h5>Nos hébergements</h5>
                 <ul>
-                    <li><a href="">Charte qualité</a></li>
-                    <li><a href="">Soumettre votre hôtel</a></li>
+                    <li><a class ="lienFoot" href="#">Charte qualité</a></li>
+                    <li><a class ="lienFoot" href="#">Soumettre votre hôtel</a></li>
                 </ul>
             </div>
             <div class="footerLists">
                 <h5>Assistance</h5>
                 <ul>
-                    <li><a href="">Centre d'aide</a></li>
-                    <li><a href="">Nous contacter</a></li>
-                </ul> 
+                    <li><a class ="lienFoot" href="#">Centre d'aide</a></li>
+                    <li><a class ="lienFoot" href="#">Nous contacter</a></li>
+                </ul>
             </div>
         </footer>
     </body>
