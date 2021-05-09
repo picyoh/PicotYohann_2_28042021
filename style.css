@@ -7,16 +7,19 @@
 
 body {
     margin: 0;
-    padding: 2% 3%;
     font-family: 'Raleway', sans-serif;
 }
 
+.page{
+  padding: 3%;
+}
+
 header {
-    width: 100%;
     display: flex;
     flex-flow: row;
     justify-content: space-between;
     align-items: center;
+  padding: 2% 3% 0 3%;
 }
 
 h1 {
@@ -74,6 +77,7 @@ main {
 
   display: flex;
   flex-flow: row wrap;
+  margin: 0 3%;
 }
 
 h2 {
@@ -82,7 +86,13 @@ h2 {
 
 h3 {
   flex-basis: 90%;
-  font-size: 1.5em;
+  font-size: 1.8em;
+  margin-top: 0;
+}
+
+h4 {
+  margin: 0;
+  font-size: 1.3em
 }
 
 a {
@@ -94,15 +104,24 @@ a:hover {
   color:var(--bleu) ;
 }
 
+ p {
+  line-height: 0.3em;
+}
+
 #top {
-  margin-bottom: 1vh;
   width: 65%;
 }
 
 #search {
   display: flex;
   align-items: baseline;
-  margin-bottom: 2vh;
+  margin: 3% 0;
+}
+
+#search input {
+  font-weight: 700;
+  height: 4vh;
+  padding: 1%;
 }
 
 #mapPoint {
@@ -116,14 +135,11 @@ a:hover {
 }
 
 #citySearch {
-  height: 4vh;
-  padding-left: 1vw;
   border-radius: 0;
   border: 1px solid var(--gris);
 }
 
 #citySubmit {
-  height: 4vh;
   color: white;
   background: var(--bleu);
   border: none;
@@ -134,6 +150,8 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 2%;
+    font-weight: 700;
 }
 
 #filterContainer p{
@@ -144,19 +162,19 @@ a:hover {
 .filterCheck{
   cursor: pointer;
     opacity: 0;
-    height: 5%;
-    width: 7%;
+    height: 1%;
+    width: 10%;
     z-index: 1;
     position: fixed;
-    top: 29%;
+    top: 40%;
 }
 
-.filterCheck:checked .slider{
-  background-color: var(--bleu);
+.filterCheck:checked + .slider{
+  background-color: var(--bleu-clair);
 }
 
-.filterCheck:checked .sliderDot {
-  order: 1;
+.filterCheck:checked + .slider::before {
+  transform: translateX(32px);
 }
 
 .slider {
@@ -167,7 +185,16 @@ a:hover {
     transition: 300ms;
     height: 4vh;
     justify-content: space-between;
-    width: 110%;
+    width: 120%;
+}
+.sliderDot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: var(--bleu-clair);
+  transition: 300ms;
+
 }
 
 .sliderDot {
@@ -177,6 +204,7 @@ a:hover {
   border-radius: 50%;
   background: var(--bleu-clair);
   transition: 300ms;
+
 }
 
 .sliderDot i {
@@ -188,6 +216,7 @@ a:hover {
     display: flex;
     align-items: baseline;
     justify-content: flex-start;
+    margin-bottom: 2%;
 }
 
 .infoCircle {
@@ -208,10 +237,9 @@ a:hover {
 #hebergements {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 3%;
 }
-#hebergements h3 {
-    margin: 0 0 3% 0;
-}
+
 #cityAcco {
     background-color: var(--gris);
     flex-basis: 60%;
@@ -219,11 +247,12 @@ a:hover {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    padding: 3%;
 }
 
 #cityAcco a {
   flex-basis: 90%;
+  font-size: 1.2em;
+  font-weight: 700;
 }
 
 
@@ -234,14 +263,16 @@ a:hover {
     border-radius: 6% / 5%;
     display: flex;
     flex-flow: column;
-    padding: 3%;
     justify-content: space-between;
 }
 
 #popularTitle {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+}
+
+#popularTitle h3 {
+  margin: 0;
 }
 
 /*Containers*/
@@ -262,11 +293,18 @@ a:hover {
 
     background: white;
     box-shadow: silver 3px 3px 9px;
-    flex-basis: 10%;
+    flex-basis: 24%;
     padding: 1%;
     border-radius: 4% / 12%;
     display: flex;
     flex-flow: row;
+}
+
+.horContainer .infoContainer{
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  flex-basis: 50%;
 }
 
 .imgVert{
@@ -277,13 +315,14 @@ a:hover {
 }
 
 .imgHor {
-    width : 16vh;
-    height: 16vh;
+    width : 18vh;
+    height: 18vh;
     border-radius: 10% 0 0 10% / 10% 0 0 10% ;
+    flex-basis: 50%;
 }
 
 .infoContainer {
-  padding: 0 0 2% 5%;
+  padding: 3% 5% 2% 5%;
 }
 
 .stars {
@@ -300,7 +339,7 @@ color: var(--gris);
   flex-basis: 100%;
   display:flex;
   flex-flow: row wrap;
-  margin-bottom: 2%;
+  margin-bottom: 3%;
 }
 
 #activities {
@@ -343,7 +382,7 @@ color: var(--gris);
 
 /*Footer*/
 footer {
-  padding: 2%;
+  padding: 2% 3%;
   background-color: var(--gris);
   display: flex;
   justify-content: space-between;
