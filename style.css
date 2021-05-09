@@ -92,7 +92,8 @@ h3 {
 
 h4 {
   margin: 0;
-  font-size: 1.3em
+  font-size:1.2em;
+  font-weight:700;
 }
 
 a {
@@ -105,7 +106,7 @@ a:hover {
 }
 
  p {
-  line-height: 0.3em;
+   margin: 2% 0;
 }
 
 #top {
@@ -162,11 +163,11 @@ a:hover {
 .filterCheck{
   cursor: pointer;
     opacity: 0;
-    height: 1%;
-    width: 10%;
+    height: 3%;
+    width: 2%;
     z-index: 1;
     position: fixed;
-    top: 40%;
+    top: 33%;
 }
 
 .filterCheck:checked + .slider{
@@ -304,12 +305,13 @@ a:hover {
   display: flex;
   flex-flow: column;
   justify-content: space-between;
-  flex-basis: 50%;
+  flex-basis: 40%;
 }
 
 .imgVert{
     width : 100%;
     height: 16vh;
+    object-fit: cover;
     border-radius: 5% 5% / 12% 12% 0 0;
 
 }
@@ -317,8 +319,9 @@ a:hover {
 .imgHor {
     width : 18vh;
     height: 18vh;
+    object-fit: cover;
     border-radius: 10% 0 0 10% / 10% 0 0 10% ;
-    flex-basis: 50%;
+    flex-basis: 40%;
 }
 
 .infoContainer {
@@ -352,7 +355,7 @@ color: var(--gris);
 }
 
 #activities h4 {
-  padding-left: 6%;
+  padding: 3%6%;
 
 }
 
@@ -361,23 +364,28 @@ color: var(--gris);
   box-shadow: var(--gris) 3px 3px;
   border-radius: 5%;
   flex-basis: 100%;
+  width: 22.5%;
 }
 
 .actContainer {
-  background: white;
   box-shadow: var(--gris) 3px 3px;
   border-radius: 5% 5% / 10% 10%;
-  flex-basis: 45%;
+  width: 22.5%;
+  height: 46%;
 }
 
 .imgAct {
   border-radius: 6% 6% / 12% 12% 0 0;
-  height: 15vh;
+  object-fit: cover;
+  height: 80%;
+  width: 100%;
 }
 
 .imgActFull {
   border-radius: 5% 5% 0 0;
-  height: 30vh;
+  object-fit: cover;
+  width: 100%;
+  height: 90%;
 }
 
 /*Footer*/
