@@ -169,10 +169,6 @@ main {
   display: none;
 }
 
-#citySubmit p {
-  margin: 0;
-}
-
 /* Filtres */
 
 #filters{
@@ -528,16 +524,21 @@ footer a:hover{
 
 @media all and (max-width: 480px) {
 
+  header {
+    margin: 0;
+  }
+
   p {
     font-size : 1.1em;
   }
 
   nav ul {
     flex-flow: row wrap;
+    margin: 0;
   }
 
   nav li {
-    flex-basis:47%;
+    flex-basis:50%;
     order: 2;
     padding-bottom: 5%;
   }
@@ -551,11 +552,11 @@ footer a:hover{
   
   #logo {
     order: 0;
-    flex-basis: 80%;
+    flex-basis: 70%;
   }
 
   #logo a {
-    padding-left: 5%;
+    padding-left: 8%;
   }
 
   #blueBold {
@@ -564,15 +565,15 @@ footer a:hover{
   }
 
   #blueBold a {
-    padding-right: 50%;
+    padding-right: 60%;
   }
 
   #blueBold:hover::before {
-    top:5%;
+    top: 0;
     right: 3%;
     z-index: -1;
     background-color: var(--gris);
-    height: 7%;
+    height: 12%;
     width: 25%;
   }
 
@@ -593,16 +594,16 @@ footer a:hover{
   }
 
   #searchPoint {
-    padding: 5%;
+    padding: 4%;
   }
 
   #citySearch {
     width: 100%;
-    padding: 0 5%;
+    padding: 0 4%;
   }
 
   #citySubmit {
-    padding: 5%;
+    padding: 4%;
     border-radius: 30%;
     position: relative;
     right: 2%;
@@ -612,8 +613,12 @@ footer a:hover{
     display: block;
   }
   
-  #citySubmit p {
-    display: none;
+  #citySubmit{
+    font-size: 0;
+  }
+
+  #citySubmit .fas {
+    font-size: initial;
   }
 
   #filters {
@@ -624,7 +629,7 @@ footer a:hover{
     padding-right: 10%;
   }
   
-  #filters label {
+  #filters h5 {
     flex-basis: 90%;
     margin-bottom: 3%;
   }
@@ -645,7 +650,7 @@ footer a:hover{
   }
 
   .sliderDot {
-    right: 3%;
+    right: 5%;
   }
   
   .sliderDot i {
@@ -714,9 +719,10 @@ footer a:hover{
   .actCol {
     max-width: 100%;
   }
-  .actCard {
-    border-radius: 5% 5% / 10% 10%;
 
+  .actCard {
+    min-height: 32vh;
+    border-radius: 5% 5% / 10% 10%;
   }
 
   .actCard img{
@@ -762,7 +768,7 @@ footer a:hover{
   }
 
   nav li::before{
-    top: 12%;
+    top: 16%;
     width: 50%;
     background-color: var(--gris);
 
@@ -774,7 +780,7 @@ footer a:hover{
   }
 
   #logo a {
-    padding-left: 5%;
+
   }
 
   #blueBold {
@@ -790,16 +796,21 @@ footer a:hover{
     top: 0;
     z-index: -1;
     background-color: var(--gris);
-    height: 7%;
+    height: 10%;
+    width: 25%;
   }
+
   main{
-   flex-flow: column;
    margin: 0;
   }
 
   #top{
-    padding: 0 4%;
+    padding: 0 3%;
     width: 100%;
+  }
+
+  #search{
+    padding-left: 2%;
   }
 
   #citySearch{
@@ -816,18 +827,22 @@ footer a:hover{
   }
 
   #citySubmit {
-    padding: 2%;
     border-radius: 15% / 30%;
     position: relative;
-    right: 5%;
+    right: 2%;
   }
 
-  #filters label {
-    padding-right: 0;
+  #filters {
+    flex-wrap: wrap;
+  }
+
+  #filters h5 {
+    flex: 90%;
+    margin-bottom: 3%;
   }
 
   .filterElements{
-    padding-right: 0;
+    padding: 0 0 3% 0;
   }
 
   .slider {
@@ -855,16 +870,14 @@ footer a:hover{
   }
 
   #hebergements{
-    margin: 0 0 0 4%;
     flex-wrap: wrap;
   }
 
   #cityResults{
     background: white;
-    padding: 0;
     margin: 0;
     flex-basis: 100%;
-    align-items: center;;
+    align-items: center;
   }
 
   #cityResults h3 {
@@ -874,14 +887,9 @@ footer a:hover{
 
   .cityCard {
     align-self: center;
-    width: 46%;
+    width: 47%;
     height: 32vh;
-    margin-bottom: 6%;;
-  }
-
-  .cityCard img {
-
-    align-self: center;
+    margin-bottom: 3%;
   }
 
   .hotelInfos {
@@ -896,34 +904,31 @@ footer a:hover{
     width: 100%;
     border-radius: 0;
   }
+
+  #populaires h3 {
+    flex-basis: 80%;
+  }
+
   .popCard .hotelInfos{
     font-size: 1.5em;
   }
 
   .popCard{
     height: 24vh;
+    width: 100%;
     padding: 1.5%;
-  }
-
-  .popCard img {
-    max-width: 50%;
+    align-self: center;
   }
 
   #activites {
-    width: 100%;
-    padding: 0 0 0 4%;
+    padding: 0 3%;
   }
-
-  #activites h3 {
-    margin: 0 0 7% 0;
-  }
-
   .actCol {
-    max-width: 47%;
+    max-width: 46.5%;
   }
+
   .actCard {
     border-radius: 5% 5% / 10% 10%;
-
   }
 
   .actCard img{
@@ -935,13 +940,8 @@ footer a:hover{
     max-height: 100%;
   }
 
-  footer{
-    width: 100%;
-    flex-flow: row;
-    padding: 5%;
-  }
   footer ul{
-    padding-bottom: 5%;;
+    padding-bottom: 5%;
   }
 
 }
