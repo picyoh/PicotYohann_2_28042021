@@ -2,10 +2,10 @@
 <html lang='fr'>
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/4c1e0e2ac5.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
         <title>Reservia</title>
     </head>
     <body>
@@ -80,15 +80,16 @@
                     </span>
                 </section>
 
-                <section class="infos">
+                <div class="infos">
                     <span class="infoCircle">
                         <i class="fas fa-info"></i>
                     </span>
-                    <h6>Plus de 500 logements sont disponibles dans cette ville</h6>
-                </section>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
             </article>
             
             <article id="hebergements"> 
+                <h2>Hébergement</h2>
                 <section id="cityResults" class="heb">
                     <h3>Hébergements à Marseille</h3>
                     <a class="cityCard" href="#">
@@ -325,13 +326,14 @@
                                     images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 1404w,
                                     images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 702w"
                             src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-                            
-                                    sizes="(min-width: 1440px) 22.5vw,
+                            sizes="(min-width: 1440px) 22.5vw,
                                     (max-width: 1279px) 22.5vw,
                                     (max-width: 769px) 22.5vw,
                                     96vw"
                              alt="Vieux Port">
-                        <h4>Vieux Port</h4>
+                        <div class="actName">
+                            <h4>Vieux Port</h4>
+                        </div>
                         </a>
                     </span>
 
@@ -347,11 +349,13 @@
                                         (max-width: 769px) 22.5vw,
                                         96vw"
                                 alt="Fort de Pomègues">
-                            <h4>Fort de Pomègues</h4>
+                            <div class="actName">
+                                <h4>Fort de Pomègues</h4>
+                            </div>
                         </a>
         
                         <a class="actCard small" href="#">
-                            <img srcset="images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 5184W,
+                            <img srcset="images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 5184w,
                                         images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 2592w,
                                         images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 1296w,
                                         images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 648w"
@@ -377,7 +381,9 @@
                                         (max-width: 769px) 22.5vw,
                                         96vw"
                                 alt="Parc National des Calanques">
-                            <h4>Parc National des Calanques</h4>
+                            <div class="actName">
+                                <h4>Parc National des Calanques</h4>
+                            </div>
                         </a>
                     </span>
 
@@ -393,7 +399,9 @@
                                         (max-width: 769px) 22.5vw,
                                         96vw"
                                 alt="Notre-Dame-de-la-Garde">
-                            <h4>Notre-Dame-de-la-Garde</h4>
+                            <div class="actName">
+                                <h4>Notre-Dame-de-la-Garde</h4>
+                            </div>
                         </a>
         
                         <a class="actCard equal" href="#">
@@ -407,7 +415,9 @@
                                         (max-width: 769px) 22.5vw,
                                         96vw"
                                 alt="Parc Lomgchamp">
-                            <h4>Parc Lomgchamp</h4>
+                            <div class="actName">
+                                <h4>Parc Lomgchamp</h4>
+                            </div>
                         </a>
                     </span>
             </article>

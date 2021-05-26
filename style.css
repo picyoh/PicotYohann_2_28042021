@@ -85,6 +85,10 @@ nav li {
   font-weight: 700;
 }
 
+nav li a:hover{
+  color: var(--bleu);
+}
+
 nav li::before{
   content:'';
   display: block;
@@ -275,6 +279,10 @@ color: var(--bleu);
   display: flex;
   justify-content: space-between;
   margin-bottom: 2%;
+}
+
+#hebergements h2 {
+  display: none;
 }
 
 #cityResults h3 {
