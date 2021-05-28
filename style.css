@@ -666,14 +666,14 @@ footer a:hover{
         -ms-flex-order: 2;
             order: 2;
     padding-bottom: 5%;
-    background-image: linear-gradient( var(--gris), gainsboro );
+    background-image: linear-gradient(#F2F2F2, gainsboro );
     background-position: 0 100%;
     background-size: 100% 10%;
     background-repeat: no-repeat;
   }
 
   nav li:hover{
-    background-image: linear-gradient( var(--bleu), blue);
+    background-image: linear-gradient(#0065FC, blue);
   }
 
   nav li::before{
@@ -987,15 +987,16 @@ footer a:hover{
         -ms-flex-order: 2;
             order: 2;
     padding-bottom: 5%;
-    background-image: linear-gradient(var(--gris), gainsboro);
+    background-image: linear-gradient(#F2F2F2, gainsboro);
     background-position: 0 100%;
     background-size: 100% 10%;
     background-repeat: no-repeat;
   }
 
   nav li:hover{
-    background-image: linear-gradient(var(--bleu), blue);
+    background-image: linear-gradient(#0065FC , blue);
   }
+
 
   nav li::before{
     display: none;
