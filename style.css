@@ -620,7 +620,7 @@ footer {
 min-width: 35%;
 }
 
-h5 {
+footer h5 {
   padding: 0;
 }
 
@@ -666,14 +666,14 @@ footer a:hover{
         -ms-flex-order: 2;
             order: 2;
     padding-bottom: 5%;
-    background-image: linear-gradient(var(--gris), var(--gris));
+    background-image: linear-gradient( var(--gris), gainsboro );
     background-position: 0 100%;
     background-size: 100% 10%;
     background-repeat: no-repeat;
   }
 
   nav li:hover{
-    background-image: linear-gradient(var(--bleu),var(--bleu));
+    background-image: linear-gradient( var(--bleu), blue);
   }
 
   nav li::before{
@@ -709,7 +709,6 @@ footer a:hover{
   }
 
   #top{
-    max-width: auto;
     padding: 0 7%;
   }
 
@@ -988,14 +987,14 @@ footer a:hover{
         -ms-flex-order: 2;
             order: 2;
     padding-bottom: 5%;
-    background-image: linear-gradient(var(--gris), var(--gris));
+    background-image: linear-gradient(var(--gris), gainsboro);
     background-position: 0 100%;
     background-size: 100% 10%;
     background-repeat: no-repeat;
   }
 
   nav li:hover{
-    background-image: linear-gradient(var(--bleu),var(--bleu));
+    background-image: linear-gradient(var(--bleu), blue);
   }
 
   nav li::before{
@@ -1031,7 +1030,6 @@ footer a:hover{
   }
 
   #top{
-    max-width: auto;
     padding: 0 5%;
   }
 
@@ -1263,4 +1261,73 @@ footer a:hover{
 
 }
 
+/* Media small Laptop */
+ @media all and (min-width: 1024px) and (max-width: 1439px) {
+
+  h2{
+    font-size: 1.5em;
+  }
+
+  h3{
+    font-size :1.1em;
+  }
+
+  p{
+    font-size: 0.9em;
+  }
+
+  #top{
+    min-width:90%;
+  }
+
+  .hotelInfos{
+    padding: 4%;
+  }
+
+  .cityCard img {
+    max-height: 12vh;
+  }
+
+  .cityCard h4 {
+    font-size: 0.8em;
+  }
+
+  .cityCard p {
+    font-size: 0.8em;
+    margin: 0.3em 0;
+  }
+
+  .cityCard i {
+    font-size: 0.7em;
+  }
+
+  .plus{
+    font-size: 0.9em;
+  }
+
+  .popCard h4 {
+    font-size: 0.8em;
+  }
+
+  .popCard p {
+    font-size: 0.8em;
+  }
+
+  .popCard i {
+    font-size: 0.7em;
+  }
+
+  #activites h4 {
+    font-size: 0.9em;
+  }
+
+  footer h5 {
+    font-size: 0.9em;
+  }
+
+  footer a {
+    font-size: 0.8em;
+  }
+
+ }
 
